@@ -1,32 +1,3 @@
-#voting system
-
-age_male=int(input("enter the age of male  : "))
-age_female=int(input("enter the age of female : "))
-country=input('enter country(India, saudi Arabia , South africa):').lower()
-
-
-if country=="india":
-    if age_male>18 and age_female>18:
-        print("they both are belong to  india and  they both are eligible to the vote")
-    else:
-        print("they both are belong to  india and do not eligible for to the vote . the age  sholud be greater than 18")
-
-
-elif country == "saudi arabia":
-    if age_male>18 and age_female>=18:
-        print("they both are belong to  soudi arebia and male can do the vote but female not to do the vote")    
-    else:
-        print("they both are belong to  soudi arebia and male and female both are can not to do the vote")  
-
-else:
-    if age_male>18 and age_female>21:
-        print("they both are belong to  south Africa and male and female both are can  to do the vote")  
-    else:
-        print("they both are belong to  south Africa and male and female both are can not to do the vote") 
-
-
-
-
 # PRIME NUMBER WITHIN RANGE
 
 first_number=int(input("ENTER YOUR FIRST NUMBER : "))
@@ -271,24 +242,3 @@ print(" List after filtration : " + str(res) )
 
 
 
-#8th program
-
-
-# {
-#     "company":{
-#         "employee":{
-#             "name":"Aman",
-#             "payble":{
-#                 "salary":7000,
-#                 "bouns":800
-#             }
-#         }
-#     }
-
-
-import json
-f=open('data.json' , 'r')
-
-parsed=json.loads(f.read())
-
-print(parsed['company']['employee']['payble']['salary'])
