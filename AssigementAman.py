@@ -70,7 +70,7 @@ print(remove_dup(lst_number))
 
 # 4th program
 
-number=int(input("ENTER THE VALUE OF NUMBER : "))
+number=10
 
 a=0
 b=1
