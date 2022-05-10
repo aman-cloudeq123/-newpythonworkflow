@@ -12,15 +12,15 @@ print("Largest Element is : " ,  word)
 
 # Assigement 
 # 1 program
-number1=int(input("ENTER THE  FIRST NUMBER : "))
-number2=int(input("ENTER THE  FIRST NUMBER : "))
+# number1=int(input("ENTER THE  FIRST NUMBER : "))
+# number2=int(input("ENTER THE  FIRST NUMBER : "))
 
-lst=[]
+# lst=[]
 
-for number in range(number1,number2+1):
-    if (number%5!= 0 and number % 7==0) :
-        lst.append(str(number))
-print(','.join(lst) )       
+# for number in range(number1,number2+1):
+#     if (number%5!= 0 and number % 7==0) :
+#         lst.append(str(number))
+# print(','.join(lst) )       
 
 # 2 program
 
