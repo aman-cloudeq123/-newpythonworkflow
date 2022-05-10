@@ -187,23 +187,23 @@ print("only first day participants  : ", noduplist_3)
 # 6th program
 
 
-def odd_even( lst1,lst2):
-    return [lst1[1: :2] , lst2[::2]]
+# def odd_even( lst1,lst2):
+#     return [lst1[1: :2] , lst2[::2]]
 
 
-lst1=[2,3,6,7,8,9,11,66,0,99,100,100001] 
-lst2=[2,35,63,7,85,9,11,66,0,99,100,10]     
+# lst1=[2,3,6,7,8,9,11,66,0,99,100,100001] 
+# lst2=[2,35,63,7,85,9,11,66,0,99,100,10]     
 
-a=list()
+# a=list()
 
 
 
-print("ODD INDEX ELEMT IN FIRST LIST IS : and even ", odd_even(lst1) , odd_even(lst2))
-# print("EVEN INDEX ELEMT IN SECOND LIST IS : " ,odd_even(lst2))
+# print("ODD INDEX ELEMT IN FIRST LIST IS : and even ", odd_even(lst1) , odd_even(lst2))
+# # print("EVEN INDEX ELEMT IN SECOND LIST IS : " ,odd_even(lst2))
 
-a=odd_even(lst1) + odd_even(lst2)
+# a=odd_even(lst1) + odd_even(lst2)
 
-print(a)
+# print(a)
 
 
 
