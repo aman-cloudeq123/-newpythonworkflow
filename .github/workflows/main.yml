@@ -1,5 +1,17 @@
-name: main
-on: [push]
+name: python script 
+on: 
+    workflow_dispatch:
+      inputs:
+        input:
+          description: enter number
+          required: true
+          default: 'number'
+          
+          
+env:
+    file: AssigementAman.py
+    NUMBER: ${{github.inputs.input}}
+          
 jobs:
   check-python-version:
     runs-on: ubuntu-latest
@@ -9,5 +21,6 @@ jobs:
         with:
           python-version: '3.10'
       - run: python --version
-      - run: python AssigementAman.py
+      - name: python script run
+      
     
