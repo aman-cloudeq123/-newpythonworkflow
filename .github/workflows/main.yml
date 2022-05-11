@@ -24,6 +24,6 @@ jobs:
       - name: python script run
         run : |
                 python $file $NUMBER
-                python AssigementAman.py
+                
       
     
