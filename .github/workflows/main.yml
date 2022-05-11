@@ -2,7 +2,7 @@ name: python script
 on: 
     workflow_dispatch:
       inputs:
-        input:
+        inpt:
           description: enter number
           required: true
           default: 'number'
@@ -10,7 +10,7 @@ on:
           
 env:
     file: AssigementAman.py
-    NUMBER: ${{github.inputs.input}}
+    NUMBER: ${{github.inputs.inpt}}
           
 jobs:
   check-python-version:
