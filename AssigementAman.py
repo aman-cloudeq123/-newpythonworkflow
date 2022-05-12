@@ -1,18 +1,27 @@
 import sys
+inpt=int(sys.argv[1])
+Onemax=0
+count=1
+Zeromax=0
+for i in  range(len(inpt)-1):
+    if inpt[i]==inpt[i+1]:
+        count=count+1
+        if  inpt[i+1]== "0":
 
-
-first_number = int(sys.argv[1])
-last_number = int(sys.argv[2])
-
-
-
-
-for number in range(first_number,last_number+1):
-
-    if number > 1:
-        for i in range(2, number):
-            if(number%i==0):
-                break
+            if(count>Zeromax):
+                Zeromax=count
         else:
-            print("prime numbers:",number)
+            if(count>Onemax):
+                Onemax=count
+    else:
+        count=1
+
+if(Zeromax<Onemax):
+    for i in range(Onemax):
+        print("1" , end="")
+
+else:
+  
+    for i in range(Zeromax):
+        print("0" , end="")       
 
