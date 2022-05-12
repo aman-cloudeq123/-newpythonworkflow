@@ -1,11 +1,11 @@
 name: python script 
 on: 
     workflow_dispatch:
-      inputs:
-        inpt:
-          description: enter number
-          required: true
-          default: 'number'
+        inputs:
+            inpt:
+                description: enter number
+                required: true 
+                default: 'number'
           
           
 env:
