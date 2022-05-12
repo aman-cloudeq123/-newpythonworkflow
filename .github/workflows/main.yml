@@ -1,27 +1,17 @@
-name: workflow-dispatch-inputs
+name: workflow-dispatch
 on:
   workflow_dispatch:
     inputs:
-      input-num-1:
+      inpt:
         description: 'first-num'
         required: true
-        default: 'input-value-1' 
-      input-num-2:
-        description: 'second-num'
-        required: true
-        default: 'input-value-2'
-  #push:
-   # branches:
-    #- main
-   
-
-  #pull_request:
-    #branches:
-    #- main  
+        default: 'number accepted only 1 0 format' 
+     
+  
 env:
   file: AssigementAman.py 
-  first_num_1: ${{ github.event.inputs.input-num-1 }}
-  first_num_2: ${{ github.event.inputs.input-num-2 }}
+  num_1: ${{ github.event.inputs.inpt }}
+ 
   
 jobs:
   check-python-version:
@@ -38,7 +28,7 @@ jobs:
       - name: python script
         run: |
           
-          python $file $first_num_1 $first_num_2
+          python $file $num_1 
           
       
       
