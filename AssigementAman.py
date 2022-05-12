@@ -1,27 +1,28 @@
 import sys
-inpt=int(sys.argv[1])
-Onemax=0
-count=1
-Zeromax=0
-for i in  range(len(inpt)-1):
-    if inpt[i]==inpt[i+1]:
-        count=count+1
-        if  inpt[i+1]== "0":
+nterms=int(sys.argv[1])
 
-            if(count>Zeromax):
-                Zeromax=count
-        else:
-            if(count>Onemax):
-                Onemax=count
-    else:
-        count=1
 
-if(Zeromax<Onemax):
-    for i in range(Onemax):
-        print("1" , end="")
+# nterms = int(input("How many terms? "))
+
+
+n1, n2 = 0, 1
+count = 0
+
+
+if nterms <= 0:
+   print("Please enter a positive integer")
+
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
 
 else:
-  
-    for i in range(Zeromax):
-        print("0" , end="")       
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
 
