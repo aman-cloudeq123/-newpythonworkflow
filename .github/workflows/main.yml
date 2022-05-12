@@ -23,7 +23,7 @@ jobs:
       - run: python --version
       
       - name: python script run
-        run : python $file $NUMBER
+      - run : python $file $NUMBER
                 
       
     
