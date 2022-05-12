@@ -1,11 +1,11 @@
-name: workflow-dispatch
+name: workflow-python-script
 on:
   workflow_dispatch:
     inputs:
       inpt:
-        description: 'first-num'
+        description: 'num'
         required: true
-        default: 'number accepted only 1 0 format' 
+        default: 'how many terms do you want to printed' 
      
   
 env:
