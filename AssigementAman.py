@@ -1,6 +1,6 @@
 import sys
 
-inpt=sys.argv[1]
+inpt=int(sys.argv[1])
 Onemax=0
 count=1
 Zeromax=0
