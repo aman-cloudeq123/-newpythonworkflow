@@ -1,5 +1,5 @@
 name: python script 
-on: 
+on:
     workflow_dispatch:
         inputs:
             inpt:
@@ -10,7 +10,7 @@ on:
           
 env:
     file: AssigementAman.py
-    NUMBER: ${{github.inputs.inpt}}
+    NUMBER: ${{github.event.inptus.inpt}}
           
 jobs:
   check-python-version:
