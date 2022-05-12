@@ -19,12 +19,12 @@ for i in  range(len(inpt)-1):
 
 if(Zeromax<Onemax):
     for i in range(Onemax):
-        print(Onemax , end="")
+        print("1" , end="")
 
 else:
   
     for i in range(Zeromax):
-        print(Zeromax , end="")  
+        print("0" , end="")  
 
 
 
