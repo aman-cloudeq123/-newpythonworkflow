@@ -1,6 +1,6 @@
 import sys    
 
-inpt=sys.argv[1]
+inpt=int(sys.argv[1])
 
 a=0
 b=1
