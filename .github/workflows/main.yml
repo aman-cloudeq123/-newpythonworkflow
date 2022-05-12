@@ -2,10 +2,10 @@ name: python script
 on:
     workflow_dispatch:
         inputs:
-            inpt:
+            number:
                 description: enter number
                 required: true 
-                default: 'accepted number only 1 0 format'
+                default: 'number'
           
           
 env:
