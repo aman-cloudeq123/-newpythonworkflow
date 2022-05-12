@@ -19,7 +19,7 @@ on:
     #branches:
     #- main  
 env:
-  file: python.py 
+  file: AssigementAman.py 
   first_num_1: ${{ github.event.inputs.input-num-1 }}
   first_num_2: ${{ github.event.inputs.input-num-2 }}
   
