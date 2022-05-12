@@ -5,7 +5,7 @@ on:
             inpt:
                 description: enter number
                 required: true 
-                default: 'number'
+                default: 'accepted number only 1 0 format'
           
           
 env:
