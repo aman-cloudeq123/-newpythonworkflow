@@ -10,7 +10,7 @@ on:
           
 env:
     file: AssigementAman.py
-    NUMBER: ${{github.event.inptus.inpt}}
+    NUMBER: ${{github.event.inptus.number}}
           
 jobs:
   check-python-version:
