@@ -1,6 +1,6 @@
 import sys    
 
-inpt=int(input("ENTER THE VALUE OF NUMBER : "))
+inpt=sys.argv[1]
 
 a=0
 b=1
