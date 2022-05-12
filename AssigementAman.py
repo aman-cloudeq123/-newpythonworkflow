@@ -1,5 +1,5 @@
 import sys
-nterms=sys.argv[1]
+nterms=int(sys.argv[1])
 
 
 # nterms = int(input("How many terms? "))
